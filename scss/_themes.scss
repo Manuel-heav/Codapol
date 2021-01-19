@@ -1,0 +1,53 @@
+@mixin theme-colors(
+  $light-theme: true,
+  $dark-theme: true,
+  $purple-theme: true
+) {
+  @if $light-theme {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: $secondary-color;
+  } @else if $dark-theme {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: $theme-primary-color;
+    // color: #fff;
+    a,
+    li,
+    .logo,
+    h1 {
+      color: $secondary-color;
+    }
+    .secondary-btn {
+      background-color: $theme-primary-color;
+      transition: 0.5s;
+      &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+    p {
+      color: $secondary-color;
+    }
+  } @else {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: $theme-grey-color;
+    // color: #fff;
+    a,
+    li,
+    .logo,
+    h1,
+    p {
+      color: $secondary-color;
+    }
+    .secondary-btn {
+      background-color: $theme-grey-color;
+      transition: 0.5s;
+      &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+}

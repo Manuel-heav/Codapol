@@ -1,0 +1,54 @@
+%shared {
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+%shared-theme-btn {
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dark-theme-btn {
+  @extend %shared-theme-btn;
+  background-color: $theme-primary-color;
+}
+
+.light-theme-btn {
+  @extend %shared-theme-btn;
+}
+.purple-theme-btn {
+  @extend %shared-theme-btn;
+  background-color: $theme-grey-color;
+}
+
+.primary-btn {
+  @extend %shared;
+  background-color: $primary-color;
+  transition: 0.5s;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    color: $secondary-color;
+  }
+}
+
+.secondary-btn {
+  @extend %shared;
+  background-color: #fff;
+  border: $primary-color solid 1px;
+  color: $primary-color;
+  transition: 0.5s;
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}

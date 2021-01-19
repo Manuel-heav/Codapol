@@ -1,0 +1,24 @@
+a {
+  color: $dark-text-color;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: lighten($dark-text-color, 30%);
+  transition: 0.5s;
+
+  &:hover {
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+img {
+  width: 450px;
+  margin-left: 100px;
+  margin-top: 60px;
+}

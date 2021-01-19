@@ -1,0 +1,22 @@
+.current {
+  color: $primary-color;
+}
+.logo {
+  color: lighten($dark-text-color, 10%);
+  margin-top: 30px;
+}
+
+.highlight {
+  color: $primary-color;
+}
+
+$numbers: (1, 2, 3, 4, 5);
+
+@each $number in $numbers {
+  .par-#{$number} {
+    padding: #{$number}rem;
+  }
+  .mar-#{$number} {
+    margin: #{$number}rem;
+  }
+}

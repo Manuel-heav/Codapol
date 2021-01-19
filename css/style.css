@@ -1,0 +1,220 @@
+a {
+  color: #161c2d;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  color: #485c94;
+  transition: 0.5s;
+}
+li:hover {
+  color: #2f55d4;
+  cursor: pointer;
+}
+
+img {
+  width: 450px;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+.current {
+  color: #2f55d4;
+}
+
+.logo {
+  color: #27314f;
+  margin-top: 30px;
+}
+
+.highlight {
+  color: #2f55d4;
+}
+
+.par-1 {
+  padding: 1rem;
+}
+
+.mar-1 {
+  margin: 1rem;
+}
+
+.par-2 {
+  padding: 2rem;
+}
+
+.mar-2 {
+  margin: 2rem;
+}
+
+.par-3 {
+  padding: 3rem;
+}
+
+.mar-3 {
+  margin: 3rem;
+}
+
+.par-4 {
+  padding: 4rem;
+}
+
+.mar-4 {
+  margin: 4rem;
+}
+
+.par-5 {
+  padding: 5rem;
+}
+
+.mar-5 {
+  margin: 5rem;
+}
+
+.secondary-btn, .primary-btn {
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.purple-theme-btn, .light-theme-btn, .dark-theme-btn {
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+}
+.purple-theme-btn:focus, .light-theme-btn:focus, .dark-theme-btn:focus {
+  outline: 0;
+}
+.purple-theme-btn:hover, .light-theme-btn:hover, .dark-theme-btn:hover {
+  cursor: pointer;
+}
+
+.dark-theme-btn {
+  background-color: #21343e;
+}
+
+.purple-theme-btn {
+  background-color: #50404d;
+}
+
+.primary-btn {
+  background-color: #2f55d4;
+  transition: 0.5s;
+}
+.primary-btn:hover {
+  background-color: #2443ac;
+  color: #fff;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  border: #2f55d4 solid 1px;
+  color: #2f55d4;
+  transition: 0.5s;
+}
+.secondary-btn:hover {
+  background-color: #2f55d4;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+body.dark {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #21343e;
+}
+body.dark a,
+body.dark li,
+body.dark .logo,
+body.dark h1 {
+  color: #fff;
+}
+body.dark .secondary-btn {
+  background-color: #21343e;
+  transition: 0.5s;
+}
+body.dark .secondary-btn:hover {
+  background-color: #2f55d4;
+  color: #fff;
+}
+body.dark p {
+  color: #fff;
+}
+
+body.light {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+body.purple {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #50404d;
+}
+body.purple a,
+body.purple li,
+body.purple .logo,
+body.purple h1,
+body.purple p {
+  color: #fff;
+}
+body.purple .secondary-btn {
+  background-color: #50404d;
+  transition: 0.5s;
+}
+body.purple .secondary-btn:hover {
+  background-color: #2f55d4;
+  color: #fff;
+}
+
+.top {
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.top li {
+  display: inline-block;
+  margin: 30px 20px;
+}
+
+.showcase {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+  margin-top: -90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.showcase h1 {
+  font-size: 40px;
+}
+.showcase p {
+  font-size: 19px;
+  color: #27314f;
+}
+.showcase .buttons {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

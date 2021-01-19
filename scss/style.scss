@@ -1,0 +1,74 @@
+@import "variables";
+@import "global";
+@import "utilities";
+@import "buttons";
+@import "themes";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+body.dark {
+  @include theme-colors(
+    $dark-theme: true,
+    $light-theme: false,
+    $purple-theme: false
+  );
+}
+
+body.light {
+  @include theme-colors(
+    $dark-theme: false,
+    $light-theme: true,
+    $purple-theme: false
+  );
+}
+body.purple {
+  @include theme-colors(
+    $dark-theme: false,
+    $light-theme: false,
+    $purple-theme: true
+  );
+}
+
+.top {
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    display: inline-block;
+    margin: 30px 20px;
+  }
+}
+
+.showcase {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+  margin-top: -90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 19px;
+    color: lighten($dark-text-color, 10%);
+  }
+  .buttons {
+    margin-top: 40px;
+  }
+}
